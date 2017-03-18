@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bgstats"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="jamalian.sina.memorygame.SelectDifficulty"
+    tools:showIn="@layout/activity_select_difficulty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/easy"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:background="@android:color/transparent"
+        android:onClick="startEasy"
+        android:src="@drawable/easy" />
+
+    <ImageButton
+        android:id="@+id/medium"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:background="@android:color/transparent"
+        android:onClick="startMedium"
+        android:src="@drawable/medium" />
+
+    <ImageButton
+        android:id="@+id/hard"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:background="@android:color/transparent"
+        android:onClick="startHard"
+        android:src="@drawable/hard" />
+    </LinearLayout>
+
+</RelativeLayout>

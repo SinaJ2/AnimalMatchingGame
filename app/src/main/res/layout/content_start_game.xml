@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg1"
+    android:id="@+id/rel"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="jamalian.sina.memorygame.StartGameActivity"
+    tools:showIn="@layout/activity_start_game">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.5"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true">
+
+   <TextView
+       android:id="@+id/level"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:scaleType="fitXY"
+       android:gravity="center"
+       android:textSize="28sp"
+       android:textColor="#000000"
+       android:text="@string/level"
+       android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:text="@string/number_of_tries"
+        android:adjustViewBounds="true" />
+
+    <!-- <TextView
+        android:id="@+id/tv2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:textSize="24sp"
+        android:textColor="#F2F2f2"
+        android:text="@string/matches"
+        android:adjustViewBounds="true" /> -->
+    </LinearLayout>
+
+    <!-- <TextView
+        android:id="@+id/win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="24sp"
+        android:textColor="#F2F2f2"
+        android:text=""
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true" /> -->
+
+    <TextView
+        android:id="@+id/timelimit"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:scaleType="fitXY"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:text="1:30"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true" />
+
+    <!-- <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="120dp"
+        android:textSize="24sp"
+        android:textColor="#F2F2f2"
+        android:text="@string/score"
+        android:adjustViewBounds="true" /> -->
+
+    <!-- <ImageButton
+        android:id="@+id/newgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/newgame"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:background="?android:selectableItemBackground"
+        android:onClick="startGame" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true">
+
+    <ImageButton
+        android:id="@+id/card0"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+
+    <ImageButton
+        android:id="@+id/card1"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+
+        <!-- <selector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <item android:state_selected="true"
+                android:drawable="@drawable/blankcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <item android:state_selected="false"
+                android:drawable="@drawable/backcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </selector> -->
+
+    <ImageButton
+        android:id="@+id/card2"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+
+    <ImageButton
+        android:id="@+id/card3"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true">
+
+    <ImageButton
+        android:id="@+id/card4"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+
+    <ImageButton
+        android:id="@+id/card5"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+
+    <ImageButton
+        android:id="@+id/card6"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+
+    <ImageButton
+        android:id="@+id/card7"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true">
+
+    <ImageButton
+        android:id="@+id/card8"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+
+    <ImageButton
+        android:id="@+id/card9"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+
+    <ImageButton
+        android:id="@+id/card10"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+
+    <ImageButton
+        android:id="@+id/card11"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true">
+
+    <ImageButton
+        android:id="@+id/card12"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+
+    <ImageButton
+        android:id="@+id/card13"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+
+    <ImageButton
+        android:id="@+id/card14"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+
+    <ImageButton
+        android:id="@+id/card15"
+        android:src="@drawable/backcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="flipCard" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
